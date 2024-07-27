@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,8 +13,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="bg-black">
+      <head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+          />
+      </head>
+      <body className={inter.className} >
+        <Navbar />
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
