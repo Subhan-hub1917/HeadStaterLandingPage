@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden outfit bg-indigo-950 text-white">
       {/* Intro */}
-      <section className="bg-gradient-to-b from-black to-indigo-950 pt-20 font-thin text-center w-screen py-5 overflow-y-hidden" >
+      <section className="bg-gradient-to-b from-black to-indigo-950 pt-40 font-thin text-center w-screen py-8 overflow-y-hidden" >
         <motion.div className="space-y-5"  initial={{opacity:0,translateX:'-100%'}} animate={{opacity:1,translateX:'0%'}} transition={{duration:0.4,ease:'anticipate'}}>
           <div className="text-3xl font-semibold">
            <h1>Revolutionizing Content Creation</h1>
