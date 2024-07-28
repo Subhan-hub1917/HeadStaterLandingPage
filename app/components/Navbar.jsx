@@ -18,9 +18,13 @@ const Navbar = () => {
     <div className='z-40 flex relative items-center justify-between bg-transparent text-white'>
         <div className='flex'>
             <img src="" />
-            <h1 className='lg:text-3xl text-xl font-bold'>Headstarter</h1>
+            <h1 className='lg:text-3xl text-xl font-bold'>RUSH Solutions</h1>
         </div>
         <div className='hidden lg:flex space-x-5'>
+<<<<<<< HEAD
+{/*             <p className='text-md font-medium'>Info</p>
+            <p className='text-md font-medium text-center'>Wall of Love<i className='bi bi-heart'></i></p> */}
+=======
             <p className='text-md font-medium'>Info</p>
             <p className='text-md font-medium text-center'>Wall of Love<i className='bi bi-heart'></i></p>
         </div>
@@ -34,7 +38,37 @@ const Navbar = () => {
                   {/* <i className='bi bi-heart'></i> */}
               </motion.div>}
             </AnimatePresence>
+>>>>>>> 08de3ca (Clerk Authentication Added)
         </div>
+      <div className='relative z-40'>
+  <button className='hidden lg:block border p-3 font-medium border-cyan-500 bg-transparent text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1'>
+    Join-Us
+  </button>
+  <button className='block lg:hidden border p-2 font-medium border-cyan-500 bg-transparent text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 relative' onClick={toggleMenu}>
+    Menu
+  </button>
+  <AnimatePresence mode='wait'>
+    {menu && (
+     <motion.div
+  initial={{ translateY: -100, opacity: 0 }}
+  animate={{ translateY: 0, opacity: 1 }}
+  exit={{ translateY: -100, opacity: 0 }}
+  transition={{ duration: 0.3, ease: 'linear' }}
+  className="z-0 absolute top-12 left-0 text-lg text-center bg-transparent bg-opacity-80 backdrop-blur-md rounded-2xl w-auto shadow-lg p-4 max-w-xs"
+>
+  <p>
+    <a href={gmailUrl} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:underline">
+      Join Waitlist
+    </a>
+  </p>
+  <p className="text-white font-medium mt-2">Team</p>
+</motion.div>
+
+    )}
+  </AnimatePresence>
+</div>
+
+      
     </div>
   </div> 
   )

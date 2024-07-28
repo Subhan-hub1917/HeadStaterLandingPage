@@ -33,16 +33,18 @@ export default function Home() {
   return (
     <main className="overflow-hidden outfit bg-indigo-950 text-white">
       {/* Intro */}
-      <section className="bg-gradient-to-b from-black to-indigo-950 pt-20 font-thin text-center w-screen py-5 overflow-y-hidden" >
+      <section className="bg-gradient-to-b from-black to-indigo-950 pt-40 font-thin text-center w-screen py-8 overflow-y-hidden" >
         <motion.div className="space-y-5"  initial={{opacity:0,translateX:'-100%'}} animate={{opacity:1,translateX:'0%'}} transition={{duration:0.4,ease:'anticipate'}}>
           <div className="text-3xl font-semibold">
-            <h1>Become a 1%</h1>
-            <h1 className="text-cyan-300">Software Engineer</h1>
+           <h1>Revolutionizing Content Creation</h1>
+          <h1>With</h1>
+          <h1 className="text-cyan-300 text-5xl font-extrabold shadow-md">
+          Sleek Social
+          </h1>
           </div>
-          <div className="inline-block w-1/2">
-            <p>
-              Build 5 AI projects in 5 weeks, ship to 1000 users last 2 weeks, hackathons, irl meetups starting July 22. For Free.
-              Deadline has passed, but we're taking final apps below ;
+          <div className="inline-block w-1/2 p-4">
+            <p className="text-xl font-semibold text-gray-300">
+              Generate <span className="text-cyan-300 font-bold">Multiple</span> Posts for <span className="text-cyan-300 font-bold">Multiple</span> platforms in <span className="text-cyan-300 font-bold">Multiple</span> Languages;
             </p>
           </div>
           <div className="space-x-10 font-semibold">
@@ -59,7 +61,7 @@ export default function Home() {
       </section>
       {/* Carousel */}
       <section className="bg-gradient-to-b from-black to-indigo-950 z-0 overflow-x-hidden text-center p-5">
-        <p className="p-5 font-thin">Took part in 50+ Hackathons around the world</p>
+        <p className="p-5 font-thin">Our Dream Team is HERE</p>
         {/* <div className="overflow-hidden flex space-x-20 p-5"> */}
         <Carousel 
            responsive={responsive}
@@ -78,8 +80,19 @@ export default function Home() {
           {/* </div>   */}
       </section>
       {/* Projects Section */}
-      <motion.section initial={{opacity:0,translateY:100}} whileInView={{opacity:1,translateY:0}} viewport={{once:true}} transition={{duration:0.7,ease:'linear'}} className="flex flex-col items-center justify-center py-5 bg-gradient-to-b from-indigo-950 to-black">
+       <div className="flex flex-col items-center justify-center text-center h-screen">
+  <div className="text-3xl font-semibold">
+    <h1>Upcoming Products</h1>
+    <h1>By</h1>
+    <h1 className="text-cyan-300 text-5xl font-extrabold shadow-md">
+      RUSH Solutions
+    </h1>
+  </div>
+</div>
+
+      <motion.section initial={{opacity:0,translateY:100}} whileInView={{opacity:1,translateY:0}} viewport={{once:true}} transition={{duration:0.7,ease:'linear'}} className="flex flex-col items-center justify-center py-8 bg-gradient-to-b from-indigo-950 to-black">
         <div className="w-3/2 lg:w-1/2 rounded-3xl lg:p-3 m-5 lg:m-0 p-3 bg-indigo-950 border border-slate-700">
+         
           {
             project.map((info)=>(
               <div className="flex items-center justify-between py-3" key={info.date}>

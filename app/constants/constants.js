@@ -1,37 +1,19 @@
 export const carouselItems=[
     {
-        company:"Subhan"
+        company:"Subhan Qamaar"
     },
     {
-        company:"Hamza"
+        company:"Muhammad Hamza"
     },
     {
-        company:"Shawn"
+        company:"Umme Habiba"
     },
     {
-        company:"Frankie"
-    },
-    {
-        company:"Daniel"
-    },
-    {
-        company:"Zack"
-    },
-    {
-        company:"Wick"
-    },
-    {
-        company:"John"
+        company:"Rida Batool"
     }
+    
 ]
 export const project=[
-    {
-        date:"Jul22-Jul28",
-        week:"Week 1",
-        task:"Personal Website",
-        to_do:"Deployed",
-        link:'/'
-    },
     {
         date:"Jul29-Aug4",
         week:"Week 2",
@@ -70,7 +52,7 @@ export const project=[
     {
         date:"Sept2-Sep8",
         week:"Week 7",
-        task:"Present to an Engineer",
+        task:"Flagship Product Lanch",
         to_do:"Pending",
         link:'/'
     },
