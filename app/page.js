@@ -85,15 +85,16 @@ export default function Home() {
           {/* </div>   */}
       </section>
       {/* Projects Section */}
-      <motion.section initial={{opacity:0,translateY:100}} whileInView={{opacity:1,translateY:0}} viewport={{once:true}} transition={{duration:0.7,ease:'linear'}} className="flex flex-col items-center justify-center py-8 bg-gradient-to-b from-indigo-950 to-black">
-        <div className="w-3/2 lg:w-1/2 rounded-3xl lg:p-3 m-5 lg:m-0 p-3 bg-indigo-950 border border-slate-700">
-         <div className="text-3xl font-semibold">
+<div className="text-3xl font-semibold">
            <h1>Upcoming Products</h1>
           <h1>By</h1>
           <h1 className="text-cyan-300 text-5xl font-extrabold shadow-md">
           RUSH Solutions
           </h1>
           </div>
+      <motion.section initial={{opacity:0,translateY:100}} whileInView={{opacity:1,translateY:0}} viewport={{once:true}} transition={{duration:0.7,ease:'linear'}} className="flex flex-col items-center justify-center py-8 bg-gradient-to-b from-indigo-950 to-black">
+        <div className="w-3/2 lg:w-1/2 rounded-3xl lg:p-3 m-5 lg:m-0 p-3 bg-indigo-950 border border-slate-700">
+         
           {
             project.map((info)=>(
               <div className="flex items-center justify-between py-3" key={info.date}>
