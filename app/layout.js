@@ -16,6 +16,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-black">
       <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-00VV2N25KV"></Script>
+        <Script id="google-analytics">
+        {`  
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-00VV2N25KV');
+        `}
+        </Script>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
@@ -24,14 +33,7 @@ export default function RootLayout({ children }) {
           />
       </head>
       <body className={inter.className} >
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z50V1ZSBR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9Z50V1ZSBR');
-</script>
+        
         <Navbar />
         {children}
         <Footer/>
