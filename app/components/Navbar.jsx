@@ -32,20 +32,21 @@ const Navbar = () => {
   </button>
   <AnimatePresence mode='wait'>
     {menu && (
-      <motion.div
-        initial={{ translateY: -100, opacity: 0 }}
-        animate={{ translateY: 0, opacity: 1 }}
-        exit={{ translateY: -100, opacity: 0 }}
-        transition={{ duration: 0.3, ease: 'linear' }}
-        className='z-0 absolute top-12 left-0 text-lg text-center bg-cyan-500 rounded-2xl w-full shadow-lg p-4'
-      >
-        <p>
-          <a href={gmailUrl} target='_blank' rel='noopener noreferrer' className='text-white hover:underline'>
-            Join Waitlist
-          </a>
-        </p>
-        <p className='text-white'>Team</p>
-      </motion.div>
+     <motion.div
+  initial={{ translateY: -100, opacity: 0 }}
+  animate={{ translateY: 0, opacity: 1 }}
+  exit={{ translateY: -100, opacity: 0 }}
+  transition={{ duration: 0.3, ease: 'linear' }}
+  className="z-0 absolute top-12 left-0 text-lg text-center bg-cyan-500 bg-opacity-80 backdrop-blur-md rounded-2xl w-full shadow-lg p-4"
+>
+  <p>
+    <a href={gmailUrl} target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:underline">
+      Join Waitlist
+    </a>
+  </p>
+  <p className="text-white font-medium mt-2">Team</p>
+</motion.div>
+
     )}
   </AnimatePresence>
 </div>
