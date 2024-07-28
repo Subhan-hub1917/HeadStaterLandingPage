@@ -2,9 +2,15 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { motion } from "framer-motion";
 import Script from "next/script";
-
+import Loading from "./components/Loading";
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  RedirectToSignUp,
+  SignUp
+} from '@clerk/nextjs'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,7 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-black">
+    <ClerkProvider>
+    <html lang="en" className="bg-black text-white">
       <head>
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-00VV2N25KV"></Script>
         <Script id="google-analytics">
@@ -33,11 +40,18 @@ export default function RootLayout({ children }) {
           />
       </head>
       <body className={inter.className} >
-        
-        <Navbar />
-        {children}
-        <Footer/>
+        <SignedOut>
+          <div className="flex justify-center h-screen items-center" >
+            <SignUp/>
+          </div>
+        </SignedOut>
+        <SignedIn>
+          <Navbar />
+          {children}
+          <Footer/>
+        </SignedIn>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
