@@ -43,7 +43,7 @@ export default function Home() {
           </h1>
           </div>
           <div className="inline-block w-1/2 p-4">
-            <p className="text-xl font-semibold text-gray-800">
+            <p className="text-xl font-semibold text-gray-300">
               Generate <span className="text-cyan-300 font-bold">Multiple</span> Posts for <span className="text-cyan-300 font-bold">Multiple</span> platforms in <span className="text-cyan-300 font-bold">Multiple</span> Languages;
             </p>
           </div>
