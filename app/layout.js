@@ -24,18 +24,14 @@ export default function RootLayout({ children }) {
           />
       </head>
       <body className={inter.className} >
-      <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-9Z50V1ZSBR"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-9Z50V1ZSBR');
-          `}
-        </Script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z50V1ZSBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9Z50V1ZSBR');
+</script>
         <Navbar />
         {children}
         <Footer/>
