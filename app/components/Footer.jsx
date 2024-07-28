@@ -1,8 +1,9 @@
+"use client";
 import React from 'react'
-
+import { motion } from 'framer-motion'
 const Footer = () => {
   return (
-    <footer className='lg:flex justify-between lg:px-20 outfit py-10 font-thin px-10 text-start  bg-black text-white'>
+    <motion.footer  initial={{opacity:0,translateY:100}} whileInView={{opacity:1,translateY:0}} viewport={{once:true}} transition={{duration:0.5,ease:'linear'}} className='lg:flex justify-between lg:px-20 outfit py-10 font-thin px-10 text-start  bg-black text-white'>
         <div className='space-y-5 pb-5 lg:pb-0'>
             <div className='space-y-5'>
                 <h1 className='text-3xl font-semibold text-cyan-300'>HeadStarter</h1>
@@ -28,7 +29,7 @@ const Footer = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elt amet consectetur adipisicing elt amet consectetur adipisicing el</p>
             </div>
         </div>
-    </footer>
+    </motion.footer>
   )
 }
 

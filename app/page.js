@@ -1,5 +1,6 @@
 "use client";
 // import { translation } from "@huggingface/inference";
+import Demo from '../public/Demo.mp4'
 import { carouselItems, project } from "./constants/constants";
 import { motion } from "framer-motion";
 import 'react-multi-carousel/lib/styles.css'; 
@@ -24,7 +25,11 @@ export default function Home() {
       items: 3
     }
   };
- 
+
+  const email = "mhamza191703@gmail.com";
+  const subject = "I Wanna Join Your Team";
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`;
+  
   return (
     <main className="overflow-hidden outfit bg-indigo-950 text-white">
       {/* Intro */}
@@ -41,18 +46,20 @@ export default function Home() {
             </p>
           </div>
           <div className="space-x-5 font-semibold">
-            <button className="border border-cyan-500 p-2 glow bg-cyan-500">Apply Now</button>
-            <button className="border border-cyan-500 p-2  bg-indigo-950">About</button>
+            <button className="border border-cyan-500 p-2 glow bg-cyan-500"><a href={gmailUrl} target='_blank'  rel="noopener noreferrer">Join-Us</a></button>
+            <button className="border border-cyan-500 p-2  bg-indigo-950"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Model</a></button>
           </div>
         </motion.div>
       </section>
       {/* Demo Section */}
       <section className="bg-gradient-to-b from-indigo-950 to-black  flex items-center justify-center py-10">
-        <h1 className="border border-cyan-500 py-20 px-36 lg:py-40 lg:px-80">Demo Video</h1>
+        <video className='rounded-2xl lg:w-1/2 w-2/3 border border-slate-700' autoPlay muted loop>
+          <source  src={Demo} type='video/mp4'/>
+        </video>
       </section>
       {/* Carousel */}
       <section className="bg-gradient-to-b from-black to-indigo-950 z-0 overflow-x-hidden text-center p-5">
-        <p className="p-5 font-thin">Trusted by 15,000+ engineers around the world</p>
+        <p className="p-5 font-thin">Took part in 50+ Hackathons around the world</p>
         {/* <div className="overflow-hidden flex space-x-20 p-5"> */}
         <Carousel 
            responsive={responsive}
@@ -72,7 +79,7 @@ export default function Home() {
       </section>
       {/* Projects Section */}
       <motion.section initial={{opacity:0,translateY:100}} whileInView={{opacity:1,translateY:0}} viewport={{once:true}} transition={{duration:0.7,ease:'linear'}} className="flex flex-col items-center justify-center py-5 bg-gradient-to-b from-indigo-950 to-black">
-        <div className="w-3/2 lg:w-1/2 rounded-3xl lg:p-3 m-5 lg:m-0 p-3 bg-indigo-950 border border-black">
+        <div className="w-3/2 lg:w-1/2 rounded-3xl lg:p-3 m-5 lg:m-0 p-3 bg-indigo-950 border border-slate-700">
           {
             project.map((info)=>(
               <div className="flex items-center justify-between py-3" key={info.date}>
