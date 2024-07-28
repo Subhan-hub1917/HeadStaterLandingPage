@@ -20,11 +20,11 @@ const Navbar = () => {
             <img src="" />
             <h1 className='lg:text-3xl text-xl font-bold'>RUSH Solutions</h1>
         </div>
-        <div className='hidden lg:flex space-x-5'>
+{/*         <div className='hidden lg:flex space-x-5'>
 
             <p className='text-md font-medium'>Info</p>
             <p className='text-md font-medium text-center'>Wall of Love<i className='bi bi-heart'></i></p>
-        </div>
+        </div> */}
         <div className='z-40'>
             <button className='block p-2 font-medium'> <UserButton /></button>
             {/* <button className='block lg:hidden border p-1 font-medium border-cyan-500 relative' onClick={toggleMenu} >Menu</button>
