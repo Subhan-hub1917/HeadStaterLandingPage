@@ -48,8 +48,12 @@ export default function Home() {
             </p>
           </div>
           <div className="space-x-10 font-semibold">
-            <button className="border border-cyan-500 p-2 glow bg-cyan-500 rounded-lg"><a href={gmailUrl} target='_blank'  rel="noopener noreferrer">Join-Us</a></button>
-            <button className="border border-cyan-500 p-2  bg-indigo-950 rounded-lg"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Model</a></button>
+<button className="relative inline-block border border-cyan-500 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:from-cyan-500 hover:to-cyan-700 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+  <a href={gmailUrl} target='_blank' rel="noopener noreferrer" className="relative z-10">Join us for Upcoming Products</a>
+</button>
+<button className="border border-cyan-500 bg-indigo-950 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+  <a href='https://sleeksocial.streamlit.app/' target='_blank' className='relative z-10'>Try Application</a>
+</button>
           </div>
         </motion.div>
       </section>
