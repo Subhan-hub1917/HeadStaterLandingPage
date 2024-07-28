@@ -36,18 +36,17 @@ export default function Home() {
       <section className="bg-gradient-to-b from-black to-indigo-950 pt-20 font-thin text-center w-screen py-5 overflow-y-hidden" >
         <motion.div className="space-y-5"  initial={{opacity:0,translateX:'-100%'}} animate={{opacity:1,translateX:'0%'}} transition={{duration:0.4,ease:'anticipate'}}>
           <div className="text-3xl font-semibold">
-            <h1>Become a 1%</h1>
-            <h1 className="text-cyan-300">Software Engineer</h1>
+            <h1>Revolutionizing Content Creation</h1>
+            <h1 className="text-cyan-300">Sleek Social</h1>
           </div>
           <div className="inline-block w-1/2">
             <p>
-              Build 5 AI projects in 5 weeks, ship to 1000 users last 2 weeks, hackathons, irl meetups starting July 22. For Free.
-              Deadline has passed, but we're taking final apps below ;
+              Generate <span className="text-cyan-300">Multiple</span> Posts for <span className="text-cyan-300">Multiple</span> platforms in <span className="text-cyan-300">Multiple</span> Languages;
             </p>
           </div>
           <div className="space-x-5 font-semibold">
-            <button className="border border-cyan-500 p-2 glow bg-cyan-500"><a href={gmailUrl} target='_blank'  rel="noopener noreferrer">Join-Us</a></button>
-            <button className="border border-cyan-500 p-2  bg-indigo-950"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Model</a></button>
+            <button className="border border-cyan-500 p-2 glow bg-cyan-500"><a href={gmailUrl} target='_blank'  rel="noopener noreferrer">Join us for Upcoming Products</a></button>
+            <button className="border border-cyan-500 p-2  bg-indigo-950"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Application</a></button>
           </div>
         </motion.div>
       </section>
@@ -59,7 +58,7 @@ export default function Home() {
       </section>
       {/* Carousel */}
       <section className="bg-gradient-to-b from-black to-indigo-950 z-0 overflow-x-hidden text-center p-5">
-        <p className="p-5 font-thin">Took part in 50+ Hackathons around the world</p>
+        <p className="p-5 font-thin">Our Dream Team is HERE</p>
         {/* <div className="overflow-hidden flex space-x-20 p-5"> */}
         <Carousel 
            responsive={responsive}
