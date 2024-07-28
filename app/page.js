@@ -45,9 +45,9 @@ export default function Home() {
               Deadline has passed, but we're taking final apps below ;
             </p>
           </div>
-          <div className="space-x-5 font-semibold">
-            <button className="border border-cyan-500 p-2 glow bg-cyan-500"><a href={gmailUrl} target='_blank'  rel="noopener noreferrer">Join-Us</a></button>
-            <button className="border border-cyan-500 p-2  bg-indigo-950"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Model</a></button>
+          <div className="space-x-10 font-semibold">
+            <button className="border border-cyan-500 p-2 glow bg-cyan-500 rounded-lg"><a href={gmailUrl} target='_blank'  rel="noopener noreferrer">Join-Us</a></button>
+            <button className="border border-cyan-500 p-2  bg-indigo-950 rounded-lg"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Model</a></button>
           </div>
         </motion.div>
       </section>
