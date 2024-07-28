@@ -38,7 +38,7 @@ export default function Home() {
           <div className="text-3xl font-semibold">
            <h1>Revolutionizing Content Creation</h1>
           <h1>With</h1>
-          <h1 className="glow text-cyan-300 text-5xl font-extrabold shadow-md">
+          <h1 className="text-cyan-300 text-5xl font-extrabold shadow-md">
           Sleek Social
           </h1>
           </div>
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
 
           <div className="space-x-5 font-semibold">
-<button className="border border-cyan-500 glow bg-cyan-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-cyan-600 hover:border-cyan-600 transition duration-300 ease-in-out">
+<button className="border border-cyan-500 glow bg-cyan-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-cyan-800 hover:border-cyan-600 transition duration-400 ease-in-out">
   <a href={gmailUrl} target='_blank' rel="noopener noreferrer">Join us for Upcoming Products</a>
 </button>
 <button className="border border-cyan-500 bg-indigo-950 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
