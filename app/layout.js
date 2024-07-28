@@ -15,20 +15,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-black">
       <head>
+          {/* <!-- Google tag (gtag.js) --> */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z50V1ZSBR"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9Z50V1ZSBR');
+          </script>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
             href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
             rel="stylesheet"
           />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z50V1ZSBR"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments)}
-              gtag('js', new Date());
-
-              gtag('config', 'G-9Z50V1ZSBR');
-          </script>
       </head>
       <body className={inter.className} >
         <Navbar />
