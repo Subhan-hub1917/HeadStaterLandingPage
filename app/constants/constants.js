@@ -3,26 +3,15 @@ export const carouselItems=[
         company:"Subhan"
     },
     {
-        company:"Hamza"
+        company:"Muhammad Hamza"
     },
     {
-        company:"Shawn"
+        company:"Umme Habiba"
     },
     {
-        company:"Frankie"
-    },
-    {
-        company:"Daniel"
-    },
-    {
-        company:"Zack"
-    },
-    {
-        company:"Wick"
-    },
-    {
-        company:"John"
+        company:"Rida Batool"
     }
+    
 ]
 export const project=[
     {
