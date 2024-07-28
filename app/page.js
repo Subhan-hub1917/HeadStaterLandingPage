@@ -73,7 +73,7 @@ export default function Home() {
           >
           {
             carouselItems.map((item)=>(
-              <h1 className="text-2xl lg:text-7xl font-extrabold text-slate-100">{item.company}</h1>
+              <h1 className="text-xl lg:text-3xl font-extrabold text-slate-100">{item.company}</h1>
             ))
           }
           </Carousel>

@@ -1,9 +1,9 @@
 export const carouselItems=[
     {
-        company:"Subhan Qamaar"
+        company:"Subhan Qamar"
     },
     {
-        company:"Muhammad Hamza"
+        company:"Hamza"
     },
     {
         company:"Umme Habiba"
