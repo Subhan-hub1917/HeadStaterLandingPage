@@ -21,10 +21,7 @@ const Navbar = () => {
             <h1 className='lg:text-3xl text-xl font-bold'>RUSH Solutions</h1>
         </div>
         <div className='hidden lg:flex space-x-5'>
-<<<<<<< HEAD
-{/*             <p className='text-md font-medium'>Info</p>
-            <p className='text-md font-medium text-center'>Wall of Love<i className='bi bi-heart'></i></p> */}
-=======
+
             <p className='text-md font-medium'>Info</p>
             <p className='text-md font-medium text-center'>Wall of Love<i className='bi bi-heart'></i></p>
         </div>
@@ -38,7 +35,6 @@ const Navbar = () => {
                   {/* <i className='bi bi-heart'></i> */}
               </motion.div>}
             </AnimatePresence>
->>>>>>> 08de3ca (Clerk Authentication Added)
         </div>
       <div className='relative z-40'>
   <button className='hidden lg:block border p-3 font-medium border-cyan-500 bg-transparent text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1'>
