@@ -52,7 +52,9 @@ export default function Home() {
 <button className="border border-cyan-500 bg-cyan-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-cyan-600 hover:border-cyan-600 transition duration-300 ease-in-out">
   <a href={gmailUrl} target='_blank' rel="noopener noreferrer">Join us for Upcoming Products</a>
 </button>
-            <button className="border border-cyan-500 p-2  bg-indigo-950"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Application</a></button>
+<button className="border border-cyan-500 bg-indigo-950 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+  <a href='https://sleeksocial.streamlit.app/' target='_blank' className='relative z-10'>Try Application</a>
+</button>
           </div>
         </motion.div>
       </section>
