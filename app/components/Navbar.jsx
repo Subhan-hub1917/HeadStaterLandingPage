@@ -1,30 +1,17 @@
 'use client';
-import React, { useState } from 'react'
+import React from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import { AnimatePresence, motion } from 'framer-motion'
 import { UserButton } from '@clerk/nextjs';
 const Navbar = () => {
-  const [menu,setMenu]=useState(false)
-  const toggleMenu=()=>{
-    setMenu(!menu)
-  }
-  
-  const email = "mhamza191703@gmail.com";
-  const subject = "I Wanna Join Your Team";
-  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`;
-  
+ 
   return (
-  <div className='z-50 outfit backdrop-blur-lg lg:overflow-x-hidden fixed top-0 left-0 w-screen px-16 py-5'>
+  <div className='z-50 outfit backdrop-blur-lg lg:overflow-x-hidden fixed top-0 left-0 w-screen px-5 lg:px-16 py-5'>
     <div className='z-40 flex relative items-center justify-between bg-transparent text-white'>
         <div className='flex'>
             <img src="" />
             <h1 className='lg:text-3xl text-xl font-bold'>RUSH Solutions</h1>
         </div>
-{/*         <div className='hidden lg:flex space-x-5'>
 
-            <p className='text-md font-medium'>Info</p>
-            <p className='text-md font-medium text-center'>Wall of Love<i className='bi bi-heart'></i></p>
-        </div> */}
         <div className='z-40'>
             <button className='block p-2 font-medium'> <UserButton /></button>
             {/* <button className='block lg:hidden border p-1 font-medium border-cyan-500 relative' onClick={toggleMenu} >Menu</button>

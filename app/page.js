@@ -42,18 +42,18 @@ export default function Home() {
           Sleek Social
           </h1>
           </div>
-          <div className="inline-block w-1/2 p-4">
+          <div className="inline-block w-2/3 py-2">
             <p className="text-xl font-semibold text-gray-300">
               Generate <span className="text-cyan-300 font-bold">Multiple</span> Posts for <span className="text-cyan-300 font-bold">Multiple</span> platforms in <span className="text-cyan-300 font-bold">Multiple</span> Languages;
             </p>
           </div>
-          <div className="space-x-10 font-semibold">
-<button className="relative inline-block border border-cyan-500 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:from-cyan-500 hover:to-cyan-700 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-  <a href={gmailUrl} target='_blank' rel="noopener noreferrer" className="relative z-10">Join us for Upcoming Products</a>
-</button>
-<button className="border border-cyan-500 bg-indigo-950 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-  <a href='https://sleeksocial.streamlit.app/' target='_blank' className='relative z-10'>Try Application</a>
-</button>
+        <div className="lg:space-x-10 space-y-5 lg:space-y-0  block lg:flex text-center justify-center font-semibold">
+        <button className="relative inline-block border border-cyan-500 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:from-cyan-500 hover:to-cyan-700 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+                  <a href={gmailUrl} target='_blank' rel="noopener noreferrer" className="relative z-10">Join us for Upcoming Products</a>
+        </button>
+        <button className="border border-cyan-500 bg-indigo-950 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+          <a href='https://sleeksocial.streamlit.app/' target='_blank' className='relative z-10'>Try Application</a>
+        </button>
           </div>
         </motion.div>
       </section>
@@ -84,7 +84,7 @@ export default function Home() {
           {/* </div>   */}
       </section>
       {/* Projects Section */}
-       <div className="flex flex-col items-center justify-center text-center h-screen">
+       <div className="flex flex-col items-center justify-center text-center py-32">
   <div className="text-3xl font-semibold">
     <h1>Upcoming Products</h1>
     <h1>By</h1>
