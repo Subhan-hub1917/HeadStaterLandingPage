@@ -24,10 +24,10 @@ const Navbar = () => {
             <p className='text-md font-medium text-center'>Wall of Love<i className='bi bi-heart'></i></p> */}
         </div>
       <div className='relative z-40'>
-  <button className='hidden lg:block border p-3 font-medium border-cyan-500 bg-indigo-950 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1'>
+  <button className='hidden lg:block border p-3 font-medium border-cyan-500 bg-transparent text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1'>
     Join-Us
   </button>
-  <button className='block lg:hidden border p-2 font-medium border-cyan-500 bg-indigo-950 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 relative' onClick={toggleMenu}>
+  <button className='block lg:hidden border p-2 font-medium border-cyan-500 bg-transparent text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 relative' onClick={toggleMenu}>
     Menu
   </button>
   <AnimatePresence mode='wait'>
