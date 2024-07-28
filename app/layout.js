@@ -9,6 +9,7 @@ import {
   SignedOut,
   SignUp
 } from '@clerk/nextjs'
+import Authentication from "./components/Authentication";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey="pk_test_bmV4dC1zdHVyZ2Vvbi01MC5jbGVyay5hY2NvdW50cy5kZXYk">
     <html lang="en" className="bg-black text-white">
       <head>
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-00VV2N25KV"></Script>
@@ -39,9 +40,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className} >
         <SignedOut>
-          <div className="flex justify-center h-screen items-center" >
-            <SignUp/>
-          </div>
+          <Authentication/>
         </SignedOut>
         <SignedIn>
           <Navbar />
