@@ -36,14 +36,18 @@ export default function Home() {
       <section className="bg-gradient-to-b from-black to-indigo-950 pt-20 font-thin text-center w-screen py-5 overflow-y-hidden" >
         <motion.div className="space-y-5"  initial={{opacity:0,translateX:'-100%'}} animate={{opacity:1,translateX:'0%'}} transition={{duration:0.4,ease:'anticipate'}}>
           <div className="text-3xl font-semibold">
-            <h1>Revolutionizing Content Creation</h1>
-            <h1 className="text-cyan-300">Sleek Social</h1>
+           <h1>Revolutionizing Content Creation</h1>
+          <h1>With</h1>
+          <h1 className="text-cyan-300 text-5xl font-extrabold shadow-md">
+          Sleek Social
+          </h1>
           </div>
-          <div className="inline-block w-1/2">
-            <p>
-              Generate <span className="text-cyan-300">Multiple</span> Posts for <span className="text-cyan-300">Multiple</span> platforms in <span className="text-cyan-300">Multiple</span> Languages;
+          <div className="inline-block w-1/2 p-4">
+            <p className="text-xl font-semibold text-gray-800">
+              Generate <span className="text-cyan-300 font-bold">Multiple</span> Posts for <span className="text-cyan-300 font-bold">Multiple</span> platforms in <span className="text-cyan-300 font-bold">Multiple</span> Languages;
             </p>
           </div>
+
           <div className="space-x-5 font-semibold">
             <button className="border border-cyan-500 p-2 glow bg-cyan-500"><a href={gmailUrl} target='_blank'  rel="noopener noreferrer">Join us for Upcoming Products</a></button>
             <button className="border border-cyan-500 p-2  bg-indigo-950"><a href='https://sleeksocial.streamlit.app/' target='_blank' className=''>Try Application</a></button>
