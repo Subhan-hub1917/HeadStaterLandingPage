@@ -16,7 +16,7 @@ const Authentication = () => {
       <AnimatePresence mode='wait' >
         <motion.section key="signup" initial={{translateY:'-100%'}} animate={{translateY:'0%'}} transition={{duration:0.5,ease:'anticipate'}} exit={{translateY:'-100%'}} className='outfit h-screen bg-gradient-to-b from-indigo-950 to-black overflow-hidden flex justify-center items-center'>
           <div className='w-full lg:w-1/3 flex flex-col rounded-lg mx-20 px-5 space-y-5 justify-center items-center text-center'>
-              <Image src='/signup.png' width={700} height={300} alt='Rush Solutions' className='h-80 w-80'></Image>
+              <Image src='/signup.png' width={700} height={300} alt='Rush Solutions' className='h-full w-full md:h-80 md:w-80'></Image>
               <SignUpButton mode='modal' forceRedirectUrl='/'>
                 <button className='flex text-lg lg:text-2xl border border-slate-500 rounded-lg px-6 py-3 text-red-100 font-medium hover:bg-white hover:text-indigo-950'><i className=' bi bi-google me-1'></i>Signup With Google</button>
                 </SignUpButton>
