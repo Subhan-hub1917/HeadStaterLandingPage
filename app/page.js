@@ -10,19 +10,19 @@ export default function Home() {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 2
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 2
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 3
+      items: 2
     }
   };
 
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         <div className="lg:space-x-10 space-y-5 lg:space-y-0  block lg:flex text-center justify-center font-semibold">
         <button className="relative inline-block border border-cyan-500 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:from-cyan-500 hover:to-cyan-700 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                  <a href={gmailUrl} target='_blank' rel="noopener noreferrer" className="relative z-10">Join us for Upcoming Products</a>
+                  <a  href='https://www.linkedin.com/in/mdothamza' target='_blank' className="relative z-10">Join us for Upcoming Products</a>
         </button>
         <button className="border border-cyan-500 bg-indigo-950 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
           <a href='https://sleeksocial.streamlit.app/' target='_blank' className='relative z-10'>Try Application</a>
@@ -74,10 +74,17 @@ export default function Home() {
            transitionDuration={2000}
            autoPlay={true}    
            autoPlaySpeed={100}    
+           className='md:mx-20 lg:mx-52'
           >
           {
             carouselItems.map((item)=>(
-              <h1 className="text-xl lg:text-3xl font-extrabold text-slate-100">{item.company}</h1>
+              <div className=' rounded-lg border border-slate-700 me-2 '>
+                <img  className="w-full object-cover bg-black rounded-lg mix-blend-overlay " src={item.image} alt='RUSH Solutions'></img>
+                <h1 className="text-xl lg:text-3xl font-extrabold text-slate-100">{item.company}</h1>
+                <h1 className="text-xl font-medium text-slate-100">{item.title}</h1>
+                <a href={item.portfolio} target='_blank' className=" font-thin text-slate-100">Portfolio<i className='ms-2 bi bi-arrow-up-right'></i></a>
+                
+              </div>
             ))
           }
           </Carousel>
@@ -102,7 +109,14 @@ export default function Home() {
               <div className="flex items-center justify-between py-3" key={info.date}>
                 <div><p className="text-sm lg:text-sm font-light">{info.date}</p><h1 className="text-lg lg:text-2xl font-bold">{info.week}</h1></div>
                 <div className="text-2xl lg:text-3xl font-bold px-9 text-cyan-300">{info.task}</div>
-                <div className="text-sm lg:text-sm font-medium border border-black p-1">{info.to_do}</div> 
+                {
+                  info.link!=='/'
+                  ?
+                <a href={info.link} target='_blank' className="text-sm lg:text-sm font-medium border border-slate-700 p-1">{info.to_do}</a> 
+                  :
+                <a target='_blank' className="text-sm lg:text-sm font-medium border border-slate-700 p-1">{info.to_do}</a> 
+
+              }
               </div>
             ))
           }

@@ -1,16 +1,16 @@
 export const carouselItems=[
     {
-        company:"Subhan Qamar"
+        company:"Subhan Q.",
+        portfolio:'https://subhanqamar.netlify.app',
+        image:'/Picsart_24-06-08_12-32-56-767.jpg',
+        title:'Software Engineer'
     },
     {
-        company:"Hamza"
+        company:"Hamza S.",
+        portfolio:'http://mhamza.online',
+        image:'/IMG-20240811-WA0006-removebg-preview.png',
+        title:'Software Engineer'
     },
-    {
-        company:"Umme Habiba"
-    },
-    {
-        company:"Rida Batool"
-    }
     
 ]
 export const project=[
@@ -18,15 +18,15 @@ export const project=[
         date:"Jul29-Aug4",
         week:"Week 2",
         task:"Pantry Tracker",
-        to_do:"Pending",
+        to_do:"Completed",
         link:'/'
     },
     {
         date:"Aug5-Aug11",
         week:"Week 3",
         task:"AI Customer Support",
-        to_do:"Pending",
-        link:'/'
+        to_do:"Completed",
+        link:'https://kingsman-three.vercel.app'
     },
     {
         date:"Aug12-Aug18",
