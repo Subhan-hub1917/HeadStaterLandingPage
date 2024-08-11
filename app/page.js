@@ -1,6 +1,6 @@
 "use client";
 // import { translation } from "@huggingface/inference";
-import Demo from '../public/Demo.mp4'
+// import Demo from '/Demo.mp4'
 import { carouselItems, project } from "./constants/constants";
 import { motion } from "framer-motion";
 import 'react-multi-carousel/lib/styles.css'; 
@@ -60,12 +60,12 @@ export default function Home() {
       {/* Demo Section */}
       <section className="bg-gradient-to-b from-indigo-950 to-black  flex items-center justify-center py-10">
         <video className='rounded-2xl lg:w-1/2 w-2/3 border border-slate-700' autoPlay muted loop>
-          <source  src={Demo} type='video/mp4'/>
+          <source  src='/Demo.mp4' type='video/mp4'/>
         </video>
       </section>
       {/* Carousel */}
       <section className="bg-gradient-to-b from-black to-indigo-950 z-0 overflow-x-hidden text-center p-5">
-        <p className="p-5 font-thin">Our Dream Team is HERE</p>
+        <p className="p-5 font-bold  text-cyan-400 text-3xl md:text-5xl py-10">Our Dream Team is HERE</p>
         {/* <div className="overflow-hidden flex space-x-20 p-5"> */}
         <Carousel 
            responsive={responsive}
